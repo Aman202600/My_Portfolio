@@ -18,7 +18,7 @@ const INFO = {
 const LINKS = {
   resume: "#", // replace with a PDF link later
   github: "#", // add when available
-  linkedin: "#", // add when available
+  linkedin: "https://www.linkedin.com/in/aman-kumar-mishra-a89504254/", // add when available
 };
 
 const SKILLS = [
@@ -185,7 +185,12 @@ export default function Portfolio() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/0 shadow-[0_50px_120px_-20px_rgba(0,0,0,0.6)]" />
-              <div className="absolute inset-0 -z-10 blur-3xl opacity-50"
+                 <img
+                  src="/Profile.jpg"
+                  alt="Aman Kumar Mishra"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                 <div className="absolute inset-0 -z-10 blur-3xl opacity-50"
                    style={{ background: `radial-gradient(600px 300px at 80% 20%, ${accent}20 0%, transparent 60%)` }} />
             </div>
           </div>
@@ -322,7 +327,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href={LINKS.github} className="rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 px-4 py-2 text-slate-100">GitHub</a>
+            {/* <a href={LINKS.github} className="rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 px-4 py-2 text-slate-100">GitHub</a> */}
             <a href={LINKS.linkedin} className="rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 px-4 py-2 text-slate-100">LinkedIn</a>
           </div>
         </Card>
