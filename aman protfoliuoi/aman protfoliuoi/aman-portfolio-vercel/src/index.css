@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: system font stack */
+:root {
+  --bg: #0a0d16;
+  --bg2: #0b0f17;
+}
+body {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+}
